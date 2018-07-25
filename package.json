@@ -1,0 +1,14 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Karolina",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Siwkowska",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
