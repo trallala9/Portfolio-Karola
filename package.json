@@ -9,6 +9,7 @@
   "author": "Siwkowska",
   "license": "ISC",
   "dependencies": {
+    "hoek": "^4.2.1",
     "node-sass": "^4.9.2"
   }
 }
