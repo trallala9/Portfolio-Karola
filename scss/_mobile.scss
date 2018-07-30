@@ -1,8 +1,16 @@
 //Widescreens
-@include mediaXl {}
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 //desctops and laptops
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 //tablets small laptops
 @include mediaMd {
@@ -46,6 +54,9 @@
         grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
         grid-template-columns: 1fr;
     }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 //mobile smartfones
@@ -54,5 +65,8 @@
         margin-top: 5vh;
         text-align: center;
         font-size: 55px;
+    }
+    .projects {
+        grid-template-columns: 1fr;
     }
 }

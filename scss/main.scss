@@ -67,9 +67,7 @@ main {
   }
 }
 
-.home {
-  background: url('./img/komp');
-}
+.home {}
 
 .about-info {
   display: grid;
@@ -102,12 +100,71 @@ main {
   }
 }
 
+.lg-heading1 {
+  padding-top: 80px;
+}
+
+.sm-heading2 {
+  padding-bottom: 85px;
+}
+
+//Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 1.9;
+  img {
+    width: 100%;
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//button stylesof project and github
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+//extend btn
+.btn-light {
+  @extend.btn;
+  background: $primary-color;
+  color: wheat;
+}
+
+.btn-dark {
+  @extend.btn;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+//file work.html
+.workClass {
+  height: 100%;
+  color: set-text-color($primary-color);
+  background: url('../img/binary2.jpg');
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-size: cover;
 }
 
 @import "mobile";

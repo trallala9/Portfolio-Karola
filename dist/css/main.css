@@ -161,9 +161,6 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-home {
-  background: url("./img/komp"); }
-
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -188,12 +185,61 @@ home {
     padding: 0.8rem;
     border-bottom: #b4d9e4 5px solid; }
 
+.lg-heading1 {
+  padding-top: 80px; }
+
+.sm-heading2 {
+  padding-bottom: 85px; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 1.9; }
+  .projects img {
+    width: 100%;
+    opacity: 0.5; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #b4d9e4;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-light:hover, .btn-dark:hover {
+    background: #b4d9e4;
+    color: #000; }
+
+.btn-light {
+  background: #444;
+  color: wheat; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
+
+.workClass {
+  height: 100%;
+  color: #fff;
+  background: url("../img/binary2.jpg");
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-size: cover; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -228,10 +274,14 @@ home {
       border-radius: none; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 5vh;
     text-align: center;
-    font-size: 55px; } }
+    font-size: 55px; }
+  .projects {
+    grid-template-columns: 1fr; } }
