@@ -48,7 +48,7 @@ header {
 
 main {
   padding: 4rem; //sticky footer//height: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 30px);
   .icons {
     margin-top: 1rem;
     a {
@@ -67,7 +67,15 @@ main {
   }
 }
 
-.home {}
+.bodyAbout {
+  
+  background: url('../img/pexels66.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  
+  
+}
 
 .about-info {
   display: grid;
@@ -77,8 +85,10 @@ main {
   .bioimage {
     grid-area: bioimage;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    
     margin: auto;
+    width:60%;
+    height: 100%;
   }
   .bio {
     grid-area: bio;
@@ -100,23 +110,19 @@ main {
   }
 }
 
-.lg-heading1 {
-  padding-top: 80px;
-}
 
-.sm-heading2 {
-  padding-bottom: 85px;
-}
 
 //Work/Projects
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
-  opacity: 1.9;
+  opacity: 0.9;
+ 
   img {
-    width: 100%;
-    opacity: 0.5;
+    width: 55%;
+    opacity: 0.1;
+    border: 3px solid #fff;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
@@ -128,15 +134,14 @@ main {
 //button stylesof project and github
 .btn {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border: 0;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
   }
 }
-
 //extend btn
 .btn-light {
   @extend.btn;
@@ -153,18 +158,30 @@ main {
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: 30px;
+  
 }
 
 //file work.html
 .workClass {
-  height: 100%;
+  @include background2;
+  background: $primary-color;
   color: set-text-color($primary-color);
-  background: url('../img/binary2.jpg');
+  
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  background-size: cover;
+  overflow: hidden;
+
+}
+.bodyAbout{
+  @include background3;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
 }
 
 @import "mobile";

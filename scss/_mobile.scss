@@ -20,7 +20,7 @@
         background-position: center;
         .lg-heading {
             line-height: 1;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             font-size: 75px;
         }
     }
@@ -43,7 +43,7 @@
         height: 25vh;
         transform: translate3d(100%, 0, 0);
         .portrait {
-            background: url('../img/komp.jpg');
+            background: url('../img/number3.jpg');
             width: 150px;
             height: 150px;
             background-size: cover;
@@ -56,6 +56,7 @@
     }
     .projects {
         grid-template-columns: repeat(2, 1fr);
+        
     }
 }
 
@@ -65,8 +66,12 @@
         margin-top: 5vh;
         text-align: center;
         font-size: 55px;
+        
     }
     .projects {
         grid-template-columns: 1fr;
+        background-attachment: scroll;
+        
+
     }
 }
