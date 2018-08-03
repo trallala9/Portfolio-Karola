@@ -1,11 +1,11 @@
-$primary-color:#444;
+$primary-color: rgb(41, 44, 58);
 $secondary-color: #b4d9e4;
 $show-home-image: true;
 $show-home-image2:true;
 $show-home-image3:true;
 $home-image: url('../img/tree.jpg');
 $home-image2:url('../img/tree4.jpg');
-$home-image3:url('../img/tree3.jpg');
+$home-image3:url('../img/tree6.jpg');
 $background-opacity: 0.8;
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -64,6 +64,7 @@ $background-opacity: 0.8;
         height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
+      
       }
     }
   }
