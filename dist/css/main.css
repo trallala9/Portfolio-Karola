@@ -101,8 +101,9 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  font-family: 'Abel', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px; }
   body#bg-img {
     background: url("../img/tree.jpg");
     background-attachment: fixed;
@@ -117,6 +118,9 @@ body {
       z-index: -1;
       background: rgba(41, 44, 58, 0.8); }
 
+header {
+  font-family: 'Abel', sans-serif; }
+
 h1,
 h2,
 h3 {
@@ -125,15 +129,15 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem;
-    letter-spacing: 0.2rem; }
+    font-size: 4rem;
+    letter-spacing: 0.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem 2rem;
     background: rgba(45, 49, 64, 0.5);
-    letter-spacing: 0.4rem; }
+    letter-spacing: 0.5rem; }
 
 a {
   color: #f0f0f0;
@@ -142,11 +146,12 @@ a {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Abel', sans-serif; }
 
 .text-secondary {
   color: #b4d9e4;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 .textAbout {
   font-size: 1.2rem;
@@ -169,18 +174,20 @@ main {
 
 .sm-headingAbout {
   background: #343749;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
 
 #about {
-  opacity: 0.9; }
+  opacity: 0.9;
+  font-family: 'Abel', sans-serif; }
 
 .about-info {
   opacity: 0.9;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  font-family: 'Abel', sans-serif;
+  background-color: #292c3a; }
   .about-info .bioimage {
     grid-area: bioimage;
     margin: auto;
@@ -189,7 +196,7 @@ main {
     padding-top: 3rem; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     padding-top: 4.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
@@ -249,17 +256,16 @@ main {
 .sm-heading2 {
   font-size: 200%;
   text-align: center;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.6rem;
   margin-bottom: 3%; }
 
 .workClass {
   background: #292c3a;
   color: #fff;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
-  overflow: hidden;
-  text-transform: uppercase; }
+  overflow: hidden; }
   .workClass.workClass {
     background: url("../img/tree4.jpg");
     background-attachment: fixed;
@@ -278,7 +284,7 @@ main {
   background: #292c3a;
   color: #fff;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
   overflow: hidden; }
   .bodyAbout.bodyAbout {
@@ -307,7 +313,8 @@ main {
   main {
     align-items: center;
     text-align: center;
-    background-position: center; }
+    background-position: center;
+    font-family: 'Abel', sans-serif; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 2rem;
@@ -317,7 +324,7 @@ main {
     float: none;
     width: 100%;
     min-height: 0;
-    font-size: 10px; }
+    font-size: 10%; }
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -338,13 +345,22 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -5%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 5vh;
     text-align: center;
-    font-size: 55px; }
+    font-size: 20px; }
   .projects {
-    grid-template-columns: 1fr;
-    background-attachment: scroll; } }
+    grid-template-columns: 1fr; }
+  .work {
+    text-align: center;
+    align-items: center; }
+  .btn-dark {
+    display: inline-flex; }
+  .text-secondary {
+    font-size: 150%; }
+  .sm-heading {
+    text-align: center; } }

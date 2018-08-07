@@ -10,10 +10,13 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
+  letter-spacing: 1.5px;
 }
-
+header{
+  font-family: 'Abel', sans-serif;
+}
 //headings
 h1,
 h2,
@@ -21,14 +24,14 @@ h3 {
   margin: 0;
   font-weight: 400;
   &.lg-heading {
-    font-size: 6rem;
-    letter-spacing: 0.2rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem 2rem;
     background: rgba(lighten($primary-color, 2), 0.5);
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.5rem;
   }
 }
 
@@ -41,11 +44,12 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  font-family: 'Abel', sans-serif;
 }
 
 .text-secondary {
   color: $secondary-color;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .textAbout{
   font-size: 1.2rem;
@@ -75,10 +79,11 @@ main {
 .sm-headingAbout{
   background: lighten($primary-color, 5);
   text-align: center;
-  text-transform: uppercase;
+  
 }
 #about{
   opacity: 0.9;
+  font-family: 'Abel', sans-serif;
 }
 .about-info {
   opacity: 0.9;
@@ -86,6 +91,8 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
+  font-family: 'Abel', sans-serif;
+  background-color: $primary-color;
   .bioimage {
     grid-area: bioimage;
     margin: auto;
@@ -95,7 +102,7 @@ main {
   }
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     padding-top: 4.5rem;
   }
   .job-1 {
@@ -178,7 +185,7 @@ main {
 .sm-heading2{
   font-size: 200%;
   text-align: center;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.6rem;
   margin-bottom: 3%;
 }
 
@@ -189,10 +196,10 @@ main {
   color: set-text-color($primary-color);
   
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
   overflow: hidden;
-  text-transform: uppercase;
+ 
 
 }
 .bodyAbout{
@@ -200,7 +207,7 @@ main {
   background: $primary-color;
   color: set-text-color($primary-color);
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
   overflow: hidden;
   
