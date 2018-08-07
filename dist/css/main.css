@@ -352,9 +352,11 @@ main {
   main#home h1 {
     margin-top: 5vh;
     text-align: center;
-    font-size: 20px; }
+    font-size: 150%; }
   .projects {
     grid-template-columns: 1fr; }
+  .workClass {
+    overflow: visible; }
   .work {
     text-align: center;
     align-items: center; }
@@ -363,4 +365,9 @@ main {
   .text-secondary {
     font-size: 150%; }
   .sm-heading {
-    text-align: center; } }
+    text-align: center; }
+  .text-secondaryAbout {
+    font-size: 250%;
+    margin-top: -20%; }
+  .bodyAbout {
+    overflow: visible; } }
