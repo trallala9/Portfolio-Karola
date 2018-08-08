@@ -53,7 +53,7 @@ $background-opacity: 0.8;
 @mixin background3 {
   @if $show-home-image3 {
     &.bodyAbout {
-      background: $home-image3;
+      //background: $home-image3;
       background-attachment:fixed;
       background-size: cover;
       background-position: center;

@@ -21,7 +21,8 @@ body {
   font-size: 300%;
   z-index: 2;
   padding-top: 3%;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
+  color: wheat;
   
   
   
@@ -68,6 +69,7 @@ header {
   font-size: 1.2rem;
   color:wheat;
 }
+
 main {
   padding: 4rem; //sticky footer//height: 100%;
   min-height: calc(100vh - 30px);
@@ -109,14 +111,16 @@ main {
   .bioimage {
     grid-area: bioimage;
     margin: auto;
-    width:60%;
+    width:50%;
     height: 100%;
     padding-top: 3rem;
+    opacity: 0.5;
   }
   .bio {
     grid-area: bio;
     font-size: 0.5rem;
     padding-top: 4.5rem;
+    opacity: 0.5;
   }
   .job-1 {
     grid-area: job1;
@@ -131,7 +135,8 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.8rem;
     border-bottom: $secondary-color 5px solid;
-    margin-top: 3rem
+    margin-top: 3rem;
+    opacity: 0.5;
   }
 }
 
