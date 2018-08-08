@@ -94,7 +94,8 @@ main {
 .sm-headingAbout{
   background: lighten($primary-color, 5);
   text-align: center;
-  
+  opacity: 0.8;
+  color: wheat;
 }
 #about{
   opacity: 0.9;
@@ -115,6 +116,8 @@ main {
     height: 100%;
     padding-top: 3rem;
     opacity: 0.5;
+    
+    
   }
   .bio {
     grid-area: bio;
@@ -132,11 +135,13 @@ main {
     grid-area: job3;
   }
   .job {
-    background: lighten($primary-color, 5);
+    //background: lighten($primary-color, 5);
     padding: 0.8rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom:wheat 5px solid;
     margin-top: 3rem;
     opacity: 0.5;
+    text-align: center;
+    font-size: 115%;
   }
 }
 
@@ -189,10 +194,11 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 30px;
+  opacity: 0.2;
   
 }
 .lg-heading1{
@@ -230,6 +236,13 @@ main {
   overflow: hidden;
   
   
+  
 }
-
+.text-secondaryAbout{
+  font-size: 300%;
+}
+.text-secondaryAbout1{
+  opacity: 0.5;
+  color: wheat;
+}
 @import "mobile";

@@ -181,7 +181,9 @@ main {
 
 .sm-headingAbout {
   background: #343749;
-  text-align: center; }
+  text-align: center;
+  opacity: 0.8;
+  color: wheat; }
 
 #about {
   opacity: 0.9;
@@ -214,11 +216,12 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #343749;
     padding: 0.8rem;
-    border-bottom: #b4d9e4 5px solid;
+    border-bottom: wheat 5px solid;
     margin-top: 3rem;
-    opacity: 0.5; }
+    opacity: 0.5;
+    text-align: center;
+    font-size: 115%; }
 
 .projects {
   display: grid;
@@ -253,10 +256,10 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
   background: #14151c;
   color: #fff;
-  height: 30px; }
+  height: 30px;
+  opacity: 0.2; }
 
 .lg-heading1 {
   text-align: center;
@@ -309,6 +312,13 @@ main {
       height: 100%;
       z-index: -1;
       background: rgba(41, 44, 58, 0.8); }
+
+.text-secondaryAbout {
+  font-size: 300%; }
+
+.text-secondaryAbout1 {
+  opacity: 0.5;
+  color: wheat; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -379,4 +389,7 @@ main {
     font-size: 250%;
     margin-top: -20%; }
   .bodyAbout {
-    overflow: visible; } }
+    overflow: visible; }
+  .clock {
+    font-size: 10%;
+    text-align: center; } }
